@@ -1,0 +1,43 @@
+/*Método External*/
+h2 {color: pink}
+
+.amarelo {background: yellow; font-size: 20px;}
+
+#meu-id-1 {text-align: center; 
+        background-color: black;
+        color: white;
+        font-size: 30px;}
+
+.imagem-background {background-image: url("../assets/japao.jpg");
+                    color: white;
+                    padding: 10px;
+                    background-position: center;
+                    background-size: 500px;
+                    width: 500px;
+                    height: 500px;}
+
+.box-1 {width: 200px; height: 200px; background-color: aquamarine;}
+
+.padding-1 {color:black; padding: 20px; border: 2px solid salmon;}
+
+.padding-2 {color:black; padding: 20px 5px 0px 10px; border: 2px solid;}
+
+.width-padding-1 {
+    background-color: brown;
+    color: black;
+    padding: 20px;
+    width: 140 px;
+    border: 2px solid;
+}
+
+.border-1 {
+    border: 2px solid blue;}
+
+.border-2 {
+        margin-top: 20px;
+        border-left: 2px solid blue;
+        border-bottom: 2px solid red}
+
+.margem-1 {margin: 20px;}
+
+.margem-2 {margin: 5px;}
