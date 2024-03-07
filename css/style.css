@@ -41,3 +41,17 @@ h2 {color: pink}
 .margem-1 {margin: 20px;}
 
 .margem-2 {margin: 5px;}
+
+.texto-fonte {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.oculta-elemento {
+    display: none;
+}
+
+.black-title {
+    color: black;
+}
