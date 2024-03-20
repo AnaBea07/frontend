@@ -152,3 +152,25 @@ shrink e bais tem comportamentos opostos*/
 .diferente {
     align-self: center;
 }
+
+#pt_1 {
+    color: red;
+
+}
+
+#pt_2 {
+    display: none;
+
+}
+
+@media screen and (min-width: 500px) {
+    #pt_1 {
+        display: none;
+    
+    }
+
+    #pt_2 {
+        display: block;
+    
+    }
+}
