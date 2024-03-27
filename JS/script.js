@@ -1,8 +1,8 @@
 //console.log(10 != '10')
 
-var a = 2;
-let b = 3;
-const c = 4; 
+// var a = 2;
+// let b = 3;
+// const c = 4; 
 
 if(true) {
     //var d = 2;
@@ -14,7 +14,7 @@ if(true) {
 }
 
 //Apenas d pode ser acessada por ser var onde contém o escopo globa, não é recomendado
-l//Voce pode fazer declaração multípla 
+//Voce pode fazer declaração multípla 
 
 const g = 10, h = 20, i = 30;
 
@@ -99,7 +99,7 @@ function defineParOuImpar(numero) {
     console.log(`${numero} é impar!`)
     } };
    
-defineParOuImpar_1(3);
+console.log(defineParOuImpar_1(3));
 
 
 //função com passagem de parâmetro e com retorno
