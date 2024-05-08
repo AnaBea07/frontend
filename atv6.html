@@ -1,0 +1,144 @@
+<!-- 1. Qual cuidado devemos ter ao inserirmos números em um input do tipo text?
+    R: Deve ter cuidado pois ao digitar um número ele pode ser entendido como uma string
+2. Qual a finalidade do atributo value em um input do tipo text?
+Seria um valor padrão/iniciar na caixa de texto onde o usuário pode alterar
+3. Qual tipo de informação é possível inserir no trecho de código abaixo:
+<input type="text" disabled>
+O input está desabilitado, o usuário não pode alterar o input
+4. Qual a finalidade do atributo placeholder?
+Deixar uma mensagem ou dica para o usuário, assim que o usuário começar a digitar
+a mensagem irá sumir
+5. Qual a finalidade de um input do tipo submit?
+Enviar o dados do formulário para o servidor
+6. Qual tipo de input deve ser utilizado quando deseja-se limpar um formulário?
+O tipo de input para limpar o formulário é Reset
+7. Qual o nome do atributo que torna obrigatório o preenchimento de um campo?
+R: required
+8. Quantas opções um input do tipo radio permite selecionar?
+Apenas uma opção
+9. Quantas opções um input do tipo checkbox permite selecionar?
+Permite selecionar mais de uma 
+10. Quanto arquivos é possível anexar com o trecho de códigos abaixo?
+<input type="file" name="arquivo">
+Apenas um arquivo
+
+11. Quais os nomes das tags necessárias para a criação de um elemento de seleção simples?
+
+As tags necessárias para criaçâo de um elemento de seleção simples é select e option
+
+12. Quantas cidades é possível selecionar através do trecho de código abaixo?
+ <datalist id="cidades">
+ <option value="Florianópolis"></option>
+ <option value="Porto Alegre"></option>
+ <option value="São Paulo"></option>
+ </datalist>
+
+Apenas uma cidade pode ser selecionada no datalist-->
+
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form action="#" method="post">
+        <div style="display: block;">
+            <label for="name">Nome:</label>
+            <input type="text" name="name" placeholder="Digite seu nome..."
+            value="Ana Beatriz">
+        </div>
+        <div> 
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" placeholder="Digite sua cidade..."
+            required>
+            
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Digite seu email...">
+        </div>
+
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" placeholder="Digite sua idade" 
+            required>
+        </div>
+
+        <div>
+            <label for="data">Data:</label>
+            <input type="date" name="data">
+        </div>
+            <label for="Senha">Senha:</label>
+            <input type="password" name="Senha">
+        <div>
+            <label for="comentario">Deixe seu comentário:</label>
+            <textarea name="comentario"></textarea>
+        </div>
+
+        <div>
+            <label for="arquivo">Arquivo:</label>
+            <input type="file" name="arquivo" placeholder="Anexar arquivo" multiple>
+        </div>
+
+       
+
+        <div>
+            <label for="produto">Selecione um produto:</label>
+            <select name="produto">
+                <option value="produto_1">Produto 1</option>
+                <option value="produto_2">Produto 2</option>
+                <option value="produto_3" d>Produto 3</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="item">Selecione um item:</label>
+            <select name="item" multiple>
+                <option value="item_1">Item 1</option>
+                <option value="item_2">Item 2</option>
+                <option value="item_3">Item 3</option>
+            </select>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend style="margin-bottom: 10px;">Nome completo:</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="nome">
+            </fieldset>    
+        </div>
+
+        <div>
+            <label for="cidade">Selecione uma cidade: </label>
+            <input type="text" name="cidade" list="cidades">
+
+            <datalist id="cidades">
+                <option value="Criciúma"></option>
+                <option value="São Paulo"></option>
+                <option value="Porto Alegre"></option>
+                <option value="Içara"></option>
+                <option value="Cocal do Sul"></option>
+                <option value="Tubarão"></option>
+            </datalist>
+        </div>
+        <div style="display: inline-block;">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
+
+<!--Formulários são utilizados para enviar dados para o servidor (back-end)-->

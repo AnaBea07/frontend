@@ -1,0 +1,72 @@
+<!-- 1. Qual o nome da propriedade responsável pelo efeito da responsividade?
+    Com o objetivo de adaptar uma página web a qualquer dispositivo a propriedade responsável
+    pela responsividade é @media
+    2. O que são breakpoints?
+    São pontos de referências que contém instruções CSS para a mudança de estilos
+    da página web
+
+3. Considere uma tela com largura inicial de 350px. Com base no trecho de código abaixo, o
+que acontecerá quando a tela atingir largura de 500px?
+O elemento de id='p_1' irá desaparecer e aparecerá na página web apenas o elemento
+de id='p_2' 
+
+4. Com base no trecho de código abaixo, em qual elemento deve-se atribuir na propriedade
+display o valor flex para que os elementos tenham o comportamento de flexbox?
+
+No elemento pai para que os elementos filhos possam ser movimentado
+
+5. Deseja-se alinhar lado a lado três elementos HTML. Qual valor deve ser atribuído para a
+propriedade flex-direction?
+row
+6. Qual propriedade CSS deve ser configurada para fazer o alinhamento horizontal de um
+elemento HTML?
+justify-content
+7. Qual propriedade CSS deve ser configurada para fazer o alinhamento vertical de um
+elemento HTML?
+align-items
+
+8. Dois elementos HTML dispostos lado a lado estão muito próximos. Qual propriedade CSS
+deve ser configurada para aumentar o espaçamento lateral entre eles?
+gap
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleatv.css">
+</head>
+<body>
+
+    <div style="display: flex; flex-direction: row;">
+        <p class="A" style="padding: 20px;">A</p>
+        <p class="B" style="padding: 20px;">B</p>
+        <p class="C" style="padding: 20px;">C</p>
+    </div>
+    <div class="flex-wrap">
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+    </div>
+    
+    <div class="flex-horizontal">
+        <div class="elemento"></div>
+    </div>
+
+    <div class="flex-gap">
+        <div class="elemento-1"></div>
+        <div class="elemento-1"></div>
+    </div>
+
+    <div class="flex-basis">
+        <div class="elemento2"></div>
+        <div class="elemento2 maior"></div>
+        <div class="elemento2"></div>
+    </div>
+</body>
+</html>

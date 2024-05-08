@@ -1,0 +1,45 @@
+<!-- 1. Qual a finalidade do DOM (Document Object Model) ?
+
+R: Representação em forma de árvore do arquivo HTML, onde cada elemento (nó da árvore)
+pode realizar um operação com leitura, inserir e remover elementos, tudo via
+Javascript. Em geral, facilitar a navegação e manipulação de elementos.
+
+
+2. Através do comando “document.querySelector('#my-title')” o elemento HTML será
+selecionado via CSS pelo nome de sua classe ou pelo nome de seu ID?
+R: Pelo nome do seu ID.
+
+3. Qual a finalidade do comando appendChild?
+
+R: Adicionar um novo elemento no elemento pai
+
+4. Qual a finalidade do comando createTextNode?
+
+R: Criar um nó de texto que pode ser inserido em um elemento existente
+
+5. Considere a seguinte situação: existe em seu documento HTML 05 elementos de título h3.
+Você deseja selecionar todos de uma só vez para aplicar, via DOM, uma ação qualquer.
+Qual o nome do comando utilizado para selecioná-los?
+
+R: document.getElementsByTagName("h3")
+
+
+6. Qual o nome do comando utilizado para selecionar, via DOM, o elemento representado pelo
+trecho de código abaixo?
+<h3 id="my-title">Aulas de Front-end</h3> 
+document.getElementById("my-title")
+
+7. Qual a finalidade do comando addEventListener() ?
+
+R: Criar um evento.
+
+
+8. Qual o resultado obtido pelo trecho de código abaixo?
+<a href="https://unisatc.com.br/pagina-inicial/">Acessar o site</a>
+a.addEventListener("click", (e) => {
+ e.preventDefault();
+});
+
+R: Impedirá que a página seja redirecionada pelo link do atributo href após o clique.
+
+-->

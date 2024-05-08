@@ -1,0 +1,41 @@
+
+
+
+.linha-verde {
+
+  background-color: rgb(19, 160, 45);
+  color: white;
+
+}
+
+
+.branco {
+  background: white;
+  color: black;
+}
+
+.cinza {
+  background: rgba(207, 207, 207, 0.817);
+  color: black;
+  border: 1px solid black;
+  
+}
+
+table {
+  width: 1000px;
+}
+
+td:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.excluir {
+ margin-left: 60px;
+ 
+}
+
+
+
+/* http://localhost:5173/*/
