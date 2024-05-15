@@ -1,7 +1,11 @@
-export default function TablePrice(props) {
+
+
+export default function TablePrice({products, editProduct, deleteProduct}) {
+
+   
 
     return (
-
+        <>
         <table>
             <thead>
                 <tr className="linha-verde">
@@ -14,19 +18,24 @@ export default function TablePrice(props) {
             </thead>
 
             <tbody>
-            {props.products.map(product => (
+            {products.map(product => (
                 <tr key={product.id}>
                     <td className="branco">{product.id}</td>
                     <td className="branco">{product.name}</td>
                     <td className="branco">R${product.price}</td>
-                    <td className="branco">{product.weight}</td>
+                    <td className="branco">{product.stock}</td>
                     <td className="branco">
-                        <button className="cinza editar">Editar</button>
-                        <button className="cinza excluir">Excluir</button>
+                        <button onClick={()=> editProduct(product.id)} className="cinza editar">Editar</button>
+                        <button onClick={() => deleteProduct(product.id)} className="cinza excluir">Excluir</button>
                     </td>
                 </tr>
                  ))}
             </tbody>
         </table>
+
+        
+        </>
+
+
     )
 }
